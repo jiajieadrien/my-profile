@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>J.J's Profile</title>
+	<meta name="description" value="This is the profile of J.J">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet"> <!-- put this rule from Google fonts before the rule below to make sure we can use these fonts in our style sheet. -->
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a8aa2a49b8.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+<div class="container">
+ <div id="profile">
+	<h1>Nice to see you here.</h1>
+	<h1>I'm J.J.</h1>
+	<img src="images/profile3.jpg" alt="A profile picture of JJ" width="400" height="400" id="profilepic">
+	<!-- ID allows you to identity and modify this single element(here it's the profile picture) in CSS using #id {} -->  
+	<p>I'm a writer, Chinese, and an actual communist.</p>
+	<a href="https://www.youtube.com/watch?v=jKgBCgMOXhc" target="_blank" class="btn-black text-yellow">Here's a video of Ariana Grande working in KFC</a>
+ </div>
+
+ <div class="card-hotpink">
+    <h2>I'm fluent in three languages
+    	<i class="fas fa-language"></i>
+    </h2>
+       <P>I can speak <em>Chinese</em>, <em>English</em> and <em>French</em>.</P>
+ </div>
+
+ <div class="card-hotpink">
+	<h2>Digital marketing is my forté
+		<i class="fas fa-mobile-alt"></i>
+	</h2>
+       <P>I am familiar with <strong>Facebook Ads, Google Ads</strong>.</P>
+       <p>I have a basic understanding of <strong>Criteo</strong>, <strong>WonderPush</strong> and <strong>coding</strong>.</p> 
+ </div>
+
+ <div class="card-hotpink">
+ 	<!-- CLASS allows you to identity and modify all the elements classed in the same category in CSS using .sections {} 
+ 		id is unique while class is re-usable 
+ 		different IDs and Classes can be applied to a single element to add different style rules
+ 		You can put several classes on the same elements. Just put a space between the different class
+ 		e.g class="text-justify background-white"
+ 		.sections h2 is called a desdendant selector, using .sections h2 {} to stylise only the h2 parts inside the sections class
+ 		if ID an Class style rules conflict with each other, ID rule will be the final result because ID is more specific than Class. Same goes for others, the style will always choose the most specific selectors -->  
+	<h2>I love literature and arts
+		<i class="fas fa-palette"></i>
+	</h2>
+       <P>Modern and Contemporary literature and arts are my favorite.</P> 
+       <P>They are weird, intimate and relatable.</P> 
+ </div>
+    
+ <div class="card-hotpink">
+	<h2>Useful Links</h2>
+       <ul class="list-center">
+       	<li class="btn-black">
+       		<a href="https://www.linkedin.com/in/jiajie-liu-78417a177/" target="_blank" class="text-yellow">My LinkedIn <i class="fab fa-linkedin"></i></a>
+       	</li>
+
+       	<li class="btn-black">
+       		<a href="https://www.youtube.com/watch?v=tB3ZEZrR7OQ" target="_blank" class="text-yellow">Britney and Lana want some Pepsi cola in KFC</a>
+       	</li>
+       </ul>
+ </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* CSS规则应该把越细致的越写在后面，因为顺序可能会导致overwrite */
+
+body {
+	background-color: #FF8E7B; 
+	/* three different ways of adding colors: color name, rgb/rgba, hex code*/
+	font-family: 'Lora', serif;
+	font-weight: 600;
+	color: black;
+}
+
+/* 不要忘记在每个规则的结尾写上;表示完结 
+在body {} , these rules apply to all body parts
+p {}, apply to all paragraphe parts
+ul {}, to all the ul parts
+h1, h2 {}, to BOTH h1 and h2
+rgba, a means opacity/transparency, it goes from 0-1
+*/
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900; /* goes from 100-900; you can also type in lighter/bold */
+	letter-spacing: 3px;
+	line-height: 0.5;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	line-height: 2;
+	font-weight: 600;
+	font-size: 22px;
+	color: #FEF17F;
+}
+
+a {
+	text-decoration: none; /* this gets rid of the underlines of all links */
+	transition: color 0.3s ease;
+	} 
+a:hover {
+	text-decoration: underline;
+}
+
+
+.container {
+	width:700px;
+	margin: auto;
+	text-align: center;
+}
+
+#profile {
+	background: white;
+	padding: 20px;
+	margin: 40px 0px;
+	box-shadow: 0 10PX 30PX rgba(0,0,0,0.2);
+	border: 6px solid black;
+}
+
+.card-hotpink {
+	background: #FF8E7B;
+	padding: 20px;
+	margin: 20px 0px;
+	box-shadow: 0PX 20PX 30PX rgba(0,0,0,0.2);
+	border-radius: 4PX;
+	border:4PX SOLID black;
+}
+
+#profilepic:hover {
+	border-radius: 50%;
+}
+
+.btn-black {
+	background: black;
+	padding: 4px 10PX;
+	margin: 10px auto; 
+	width: 450px;
+}
+
+.btn-black:hover {
+	background: #FEF17F;
+	color: black; 
+}
+
+.text-yellow {
+	color: #FEF17F;
+}
+
+.text-yellow:hover {
+	background: #FEF17F;
+	color: black; 
+}
+
+.list-center {
+	list-style: none;
+	padding-left: 0px;
+}
+
+
+@media (max-width: 920PX) {
+	.container {
+		width: 600px
+	}
+}
+
+@media (max-width: 700PX) {
+	.container {
+		width: 500px
+	}
+}
